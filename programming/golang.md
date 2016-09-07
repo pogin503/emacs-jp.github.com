@@ -167,4 +167,4 @@ Go用 flymake
 ## 参考
 * [EmacsでのGo言語編集環境 by typesterさん](http://unknownplace.org/archives/golang-editing-with-emacs.html)
 * [Emacsを使ったGo言語開発手法(2013.07版) by ymotongpooさん](http://ymotongpoo.hatenablog.com/entry/2013/07/06/154448)
-* [Writing Go in Emacs by Dominik Honnefさん](http://www.honnef.co/posts/2013/08/writing_go_in_emacs__cont__/)
+* [Writing Go in Emacs by Dominik Honnefさん](https://dominik.honnef.co/posts/2013/08/emacs-go-2/)
