@@ -309,3 +309,13 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+require 'html-proofer'
+task :htmlproofer do
+  sh "bundle exec jekyll build"
+  HTMLProofer.check_directory("./_site", {
+                                :allow_hash_href => true,
+                                :verbose => true,
+                                :typhoeus => { :ssl_verifyhost => 2 }
+                              }).run
+end
