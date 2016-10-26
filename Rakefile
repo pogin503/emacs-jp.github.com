@@ -316,6 +316,9 @@ task :htmlproofer do
   HTMLProofer.check_directory("./_site", {
                                 :allow_hash_href => true,
                                 :verbose => true,
-                                :typhoeus => { :ssl_verifyhost => 2 }
+                                :typhoeus => {
+                                  :ssl_verifyhost => 2,
+                                  :timeout => 20,
+                                }
                               }).run
 end
